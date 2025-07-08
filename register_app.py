@@ -29,8 +29,8 @@ def handle_node_registration():
 def handle_ai_requests():
     context = zmq.Context()
     ai_socket = context.socket(zmq.REP)
-    ai_socket.bind("tcp://192.168.0.178:5559")
-    print("[Register] Binding socket to tcp://192.168.0.178:5559")
+    ai_socket.bind("tcp://172.26.20.59:5559")
+    print("[Register] Binding socket to tcp://172.26.20.59:5559")
 
     while True:
         print("[Register] Waiting for AI engine message...")
