@@ -13,7 +13,7 @@ METRICS = {
 def register_with_server():
     context = zmq.Context()
     register_socket = context.socket(zmq.REQ)
-    register_socket.connect("tcp://192.168.0.178:5558")
+    register_socket.connect("tcp://172.26.20.59:5558")
     register_socket.RCVTIMEO = 5000  # timeout in ms
     print("[Network Node] Connecting to Register service...")
 
